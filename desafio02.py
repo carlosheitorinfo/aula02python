@@ -4,7 +4,12 @@ for i in range(1,8):
 total += i
 dias = 7
 media = total / dias 
+talta = max(tmp)
+tbaixa = min(tmp)
 print(f"A média das temperaturas foi de: {media:.2f}")
-print(f": {total}")
-print(f": {contador}")
+print(f": {talta}")
+print(f": {tbaixa}")
+
+
+
 
