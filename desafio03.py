@@ -3,14 +3,13 @@
 # Exiba o detalhamento do saque.(Exemplo: “2 notas de 100, 1 nota de 50, 1 nota de 20…")
 
 valor = int(input('Qual valor você quer sacar? R$ '))
-total = valor
 notas = [100, 50, 20, 10]
 quantidade = []
 
 i = 0
-while total > 0:
-    if total >= notas[i]:
-        total -= notas[i]
+while valor > 0:
+    if valor >= notas[i]:
+        valor -= notas[i]
         quantidade.append(notas[i])
     else:
         i += 1
