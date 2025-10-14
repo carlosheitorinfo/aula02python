@@ -1,3 +1,7 @@
+#Peça ao usuário a quantidade inicial de produtos em estoque. 
+# Use while para permitir registrar vendas e reposições até o usuário digitar “sair”. 
+# Ao final, exiba o saldo de produtos.
+
 qtd = int(input("Qual a quantidade de produtos iniciais do seu estoque? "))
 print(f"Estoque inicial: {qtd} produtos.")
 while True:
