@@ -12,18 +12,18 @@ while True:
     opcao = input("Digite o número da opção desejada: ")
     
     if opcao == "1":
-        adicionar = int(input("Quantos produtos deseja adicionar? "))
-        if adicionar > 0:
-            qtd += adicionar
-            print(f"{adicionar} produtos adicionados. Estoque atual: {qtd} produtos.")
+        entrada = int(input("Quantos produtos deseja adicionar? "))
+        if entrada > 0:
+            qtd += entrada
+            print(f"{entrada} produtos adicionados. Estoque atual: {qtd} produtos.")
         else:
             print("Quantidade inválida. Tente novamente.")
     
     elif opcao == "2":
-        remover = int(input("Quantos produtos forma vendidos? "))
-        if 0 < remover <= qtd:
-            qtd -= remover
-            print(f"{remover} produtos vendidos. Estoque atual: {qtd} produtos.")
+        venda = int(input("Quantos produtos forma vendidos? "))
+        if 0 < venda <= qtd:
+            qtd -= venda
+            print(f"{venda} produtos vendidos. Estoque atual: {qtd} produtos.")
         else:
             print("Quantidade inválida ou insuficiente no estoque. Tente novamente.")
     
