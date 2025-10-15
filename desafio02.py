@@ -9,12 +9,10 @@ for i in range(1,8):
     t = input(f"Digite a temperatura do dia {i} : ")
     tmp.append(float(t))
     total += float(t)
-dias = 7
-media = total / dias 
+
+media = sum(tmp) / len(tmp)
 tmax= max(tmp)
 tmin= min(tmp)
-
-#media = sum(tmp) / len(tmp)
 
 print (str(f"A média das temperaturas foi de: {media:.2f}"))
 print (str(f"A temperatura mais alta foi: {tmax}"))
